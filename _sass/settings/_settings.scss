@@ -50,6 +50,10 @@ $spacing-unit-tiny:                 floor($spacing-unit-default / ($ratio * 2));
 $spacing-unit-small:                floor($spacing-unit-default / $ratio);
 $spacing-unit-large:                floor($spacing-unit-default * $ratio);
 $spacing-unit-huge:                 floor($spacing-unit-default * ($ratio * 2));
+$extra-small:                        8px;
+$small-margin:                      10px;
+$normal-margin:                     20px;
+$big-margin:                        100px;
 
 $spacings:                          (
 'tight' 0,
