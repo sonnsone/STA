@@ -8,7 +8,7 @@
  * Settings
  */
 
-@import '../node_modules/kanbasu/src/scss/settings/settings';
+@import 'kanbasu/settings/settings';
 @import 'settings/settings';
 
 
@@ -16,62 +16,62 @@
  * Tools
  */
 
-@import '../node_modules/kanbasu/src/scss/tools/functions';
-@import '../node_modules/kanbasu/src/scss/tools/mixins';
-@import '../node_modules/kanbasu/src/scss/tools/rtl';
+@import 'kanbasu/tools/functions';
+@import 'kanbasu/tools/mixins';
+@import 'kanbasu/tools/rtl';
 
 
 /**
  * Vendors
  */
 
-@import '../node_modules/kanbasu/src/scss/vendor/normalize';
+@import 'kanbasu/vendor/normalize';
 
 
 /**
  * Defaults
  */
 
-@import '../node_modules/kanbasu/src/scss/defaults/box-model';
-@import '../node_modules/kanbasu/src/scss/defaults/elements';
-@import '../node_modules/kanbasu/src/scss/defaults/typography';
-@import '../node_modules/kanbasu/src/scss/defaults/table';
-@import '../node_modules/kanbasu/src/scss/defaults/forms';
+@import 'kanbasu/defaults/box-model';
+@import 'kanbasu/defaults/elements';
+@import 'kanbasu/defaults/typography';
+@import 'kanbasu/defaults/table';
+@import 'kanbasu/defaults/forms';
 
 
 /**
  * Helpers
  */
 
-@import '../node_modules/kanbasu/src/scss/helpers/text';
-@import '../node_modules/kanbasu/src/scss/helpers/text-responsive';
-@import '../node_modules/kanbasu/src/scss/helpers/float';
-@import '../node_modules/kanbasu/src/scss/helpers/spacings';
-@import '../node_modules/kanbasu/src/scss/helpers/spacings-responsive';
-@import '../node_modules/kanbasu/src/scss/helpers/images';
-@import '../node_modules/kanbasu/src/scss/helpers/positionning';
-@import '../node_modules/kanbasu/src/scss/helpers/display';
-@import '../node_modules/kanbasu/src/scss/helpers/align';
-@import '../node_modules/kanbasu/src/scss/helpers/align-responsive';
+@import 'kanbasu/helpers/text';
+@import 'kanbasu/helpers/text-responsive';
+@import 'kanbasu/helpers/float';
+@import 'kanbasu/helpers/spacings';
+@import 'kanbasu/helpers/spacings-responsive';
+@import 'kanbasu/helpers/images';
+@import 'kanbasu/helpers/positionning';
+@import 'kanbasu/helpers/display';
+@import 'kanbasu/helpers/align';
+@import 'kanbasu/helpers/align-responsive';
 
 
 /**
  * Components
  */
 
-@import '../node_modules/kanbasu/src/scss/components/grid';
-@import '../node_modules/kanbasu/src/scss/components/widths';
-@import '../node_modules/kanbasu/src/scss/components/widths-responsive';
-@import '../node_modules/kanbasu/src/scss/components/btn';
-@import '../node_modules/kanbasu/src/scss/components/box';
-@import '../node_modules/kanbasu/src/scss/components/media';
-@import '../node_modules/kanbasu/src/scss/components/media-responsive';
-@import '../node_modules/kanbasu/src/scss/components/list';
-@import '../node_modules/kanbasu/src/scss/components/list-inline';
-@import '../node_modules/kanbasu/src/scss/components/list-stacked';
-@import '../node_modules/kanbasu/src/scss/components/embed-responsive';
-@import '../node_modules/kanbasu/src/scss/components/container';
-@import '../node_modules/kanbasu/src/scss/components/pusher';
-@import '../node_modules/kanbasu/src/scss/components/table-responsive';
+@import 'kanbasu/components/grid';
+@import 'kanbasu/components/widths';
+@import 'kanbasu/components/widths-responsive';
+@import 'kanbasu/components/btn';
+@import 'kanbasu/components/box';
+@import 'kanbasu/components/media';
+@import 'kanbasu/components/media-responsive';
+@import 'kanbasu/components/list';
+@import 'kanbasu/components/list-inline';
+@import 'kanbasu/components/list-stacked';
+@import 'kanbasu/components/embed-responsive';
+@import 'kanbasu/components/container';
+@import 'kanbasu/components/pusher';
+@import 'kanbasu/components/table-responsive';
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Shippori+Mincho&display=swap');
