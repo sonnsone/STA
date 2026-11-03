@@ -48,15 +48,17 @@
 
     {{ content }}
 
-    <footer>
+    <div class="grid grid--center">
+    <footer class="grid__item lg-w-1/1 w-1/1 container__media mrgt">
         <address>
-            {{ site.title }}<br>
-            {{ site.street }}<br>
-            {{ site.zip }} {{ site.city }}<br>
-            {{ site.state }} - {{ site.country }}<br>
+            {{ site.title }} | 
+            {{ site.street }} | 
+            {{ site.zip }} {{ site.city }} | 
+            {{ site.country }} | 
             <a href="mailto:{{ site.email }}">{{ site.email }}</a>
         </address>
     </footer>
+    </div>
 
     <script type="text/javascript" src="{{ '/javascripts/main.js' | absolute_url }}?{{site.time | date: '%s%N'}}"></script>
     <script type="text/javascript">

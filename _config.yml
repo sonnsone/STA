@@ -1,7 +1,7 @@
-title: SwissTea-Association
+title: Swiss Tea Association
 description: This is the website for the swiss tea association
 author:
-    name: Studio ANDco Sàrl
+    name: Stéphane Geiser
     twitter: ANDco_o
 email: welcome@swisstea-association.ch
 lang: fr_CH
@@ -10,7 +10,7 @@ logo: tile.png
 seo:
     type: Business
 
-street: "Avenue du Ritz 35"
+street: "Rue de la Cathédrale 15"
 city: "Sion"
 zip: "1950"
 state: "Valais"
@@ -32,8 +32,8 @@ facebook:
 google_site_verification: googleddcee30cf477c8ba
 ga: Google Analytics ID
 
+url: https://swisstea-association.ch
 baseurl: ""
-url: "https://STA.ch"
 
 exclude:
 
