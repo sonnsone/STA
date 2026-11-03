@@ -7,18 +7,12 @@
 
 .container__media {
     img {
-        width:100%;
-        max-width: 100%;
+        max-width:100%;
         height: auto;
 
     }
 }
 
-.media--responsive {
-        width:100%;
-        max-width: 100%;
-        height: auto;
-}
 
 body {
     background-color: $light-color;
