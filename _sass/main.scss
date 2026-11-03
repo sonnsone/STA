@@ -75,3 +75,39 @@
 @import 'kanbasu/components/table-responsive';
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Shippori+Mincho&display=swap');
+
+$container-width: 960px;
+$container-margin-width: 145px;
+
+@import 'post';
+@import 'nav';
+@import 'form';
+@import 'container';
+
+
+body {
+    background-color:white;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+strong {
+    background-color:$brand-color;
+    color:white;
+}
+
+a {
+    text-decoration:none;
+
+    &:hover {
+        color:white;
+        background-color:$brand-color;
+    }
+
+    &:active {
+        color:white;
+        background-color:$brand-color;
+    }
+}
