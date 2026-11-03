@@ -36,19 +36,29 @@
         }
     </script>
 
-    <!-- hidden nav for now
-    <header>
-        <h1>{{ page.title }}</h1>
-    </header>
+<nav class="nav container__nav"></div>
+        <input class="nav__toggle" type="checkbox">
+        <div class="nav__hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
 
-    <nav>
-        <ul>
-            <li><a href="{{ '/' | absolute_url }}">Homepage</a></li>
+        <ul class="nav__list">
+            <li><a href="#us" class="nav__item">A propos de nous</a></li>
         </ul>
     </nav>
-     -->
 
-    {{ content }}
+    <div class="container__content">
+        <div class="grid grid--center">
+            <div class="sm-w-1/1 md-w-1/2 lg-w-1/3 grid__item mrgt mrgb">
+                <a href="{{ '/' | absolute_url }}"><img src="{{ '/files/tuina-h.png' | absolute_url }}" class="align-center img-responsive"></a>
+            </div>
+
+            <div class="grid__item pdg mrgl box box--tight box--default sm-w-1/1">
+            {{ content }}
+            </div>
+    </div>
 
     <div class="grid grid--center">
         <div class="grid__item sm-w-1/1 md-w-1/1 lg-w-1/1 mrgt mrgb+">

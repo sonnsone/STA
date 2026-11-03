@@ -2,16 +2,29 @@
 layout: base
 ---
 
+{% assign us = site.us | sort: 'name' %}
+
 <div class="grid grid--center">
         <div class="grid__item sm-w-1/1 md-w-1/2 lg-w-1/3 container__media mrgt">
+                <div class="img-responsive">
                 <img src="{{ '/files/logo.png' | absolute_url }}" alt="image" />
+                </div>
         </div>
 </div>
 
 <div class="grid grid--center">
-        <p class="grid__item sm-w-1/1 md-w-1/2 lg-w-1/3 mrgt">
-            La Swiss Tea Association a pour but de réunir des passionné·e·s de thé ainsi que des professionnel·le·s du thé en Suisse. L'association existe pour nous permettre de partager notre passion et nos connaissances, ainsi que de favoriser des rencontres autour d'un thé. Nous souhaitons aussi promouvoir le thé et son univers en allant à la rencontre de producteurs, principalement en Asie.
-        </p>
+<div class="grid__item sm-w-1/1 md-w-1/2 lg-w-1/3 mrgt post-list post--center w-1/1" id="Apropos">
+    {% for post in us %}
+        <div class="post">
+            <h1 class="post__title">{{ post.title }}</h1>
+            {{ post.content }}
+        </div>
+    {% endfor %}
+</div>
+</div>
+
+<div class="grid grid--center">
+
         <p class="grid__item sm-w-1/1 md-w-1/2 lg-w-1/3 mrgt">
 The Swiss Tea Association brings together tea enthusiasts and tea professionals in Switzerland. The association exists to let us share our passion and knowledge, and to foster gatherings over a cup of tea. We also wish to promote tea and its world by visiting producers, mainly in Asia.
         </p>
