@@ -12,21 +12,22 @@ $rtl:                               false;
 /**
 * Colors
 */
+body {background-color: $$light-color;}
 
-$brand-color:                       black;
-$alt-color-lighter:                 #e8ebee;
-$alt-color-light:                   #adb7c3;
-$alt-color:                         #738497;
-$alt-color-dark:                    #46515e;
-$alt-color-darker:                  #303841;
-$light-color:                       white;
+$brand-color:                       #66160b;
+$alt-color-lighter:                 #c13a23;
+$alt-color-light:                   #df2d31;
+$alt-color:                         #f19a54;
+$alt-color-dark:                    #ee794e;
+$alt-color-darker:                  #ea5a37;
+$light-color:                       #fef6f2;
 
 
 /**
 * Typography
 */
 
-$font-family-default:               'Lato', Verdana, Arial, sans-serif !default;
+$font-family-default:               "Shippori Mincho", serif;
 
 $font-size-default:                 16px !default;
 $font-size-small:                   0.75rem !default;
