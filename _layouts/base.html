@@ -51,15 +51,17 @@
     {{ content }}
 
     <div class="grid grid--center">
-    <footer class="grid__item lg-w-1/1 w-1/1 container__media mrgt">
-        <address>
-            {{ site.title }} | 
-            {{ site.street }} | 
-            {{ site.zip }} {{ site.city }} | 
-            {{ site.country }} | 
-            <a href="mailto:{{ site.email }}">{{ site.email }}</a>
-        </address>
-    </footer>
+        <div class="grid__item lg-w-1/1 w-1/1 container__media mrgt mrgb+">
+            <footer>
+                <address>
+                    {{ site.title }} | 
+                    {{ site.street }} | 
+                    {{ site.zip }} {{ site.city }} | 
+                    {{ site.country }} | 
+                    <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+                </address>
+            </footer>
+        </div>
     </div>
 
     <script type="text/javascript" src="{{ '/javascripts/main.js' | absolute_url }}?{{site.time | date: '%s%N'}}"></script>
