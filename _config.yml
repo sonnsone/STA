@@ -72,6 +72,9 @@ kramdown:
 collections:
     us:
         output: true
+    
+    contact:
+        output: true
 
 # Sitemap
 
