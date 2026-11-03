@@ -1,0 +1,57 @@
+.tile {
+    background:white;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 3px 5px 5px rgba(0,0,0,0.24);
+}
+
+.tile--info {
+    font-size:$font-size-default;
+    padding:20px;
+    color:$brand-color;
+
+    h1, h2, h3, address a {
+        font-weight: bold;
+        line-height: 1;
+        font-size: 16px;
+        text-shadow: 0 0 2px rgba(100, 100, 100, 0.3);
+
+        &, a {
+            text-decoration: none;
+            color: inherit;
+            font-style: normal;
+        }
+    }
+
+    h1, h2, h3 { text-transform: uppercase; }
+}
+
+.tile--link {
+    a {
+        text-decoration:none;
+        color:inherit;
+    }
+    a:hover {
+        text-decoration:line-through;
+    }
+}
+
+.arrow {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height:41px;
+    width:35px;
+
+    &, a {
+        text-decoration: none;
+        color: inherit;
+        font-style: normal;
+    }
+}
+
+.link {
+    text-decoration:none;
+
+    &:hover {
+        text-decoration: line-through;
+    }
+}
