@@ -80,10 +80,13 @@
 $container-width: 960px;
 $container-margin-width: 145px;
 
-@import 'post';
-@import 'nav';
-@import 'form';
 @import 'container';
+@import 'footwer';
+@import 'frame';
+@import 'header';
+@import 'nav';
+@import 'post';
+@import 'tile';
 
 
 body {
