@@ -7,23 +7,23 @@ layout: base
 
 
 <div class="grid grid--center">
-<div class="grid__item sm-w-1/1 md-w-1/2 lg-w-1/3 mrgt post-list post--center w-1/1" id="Apropos">
-    {% for post in us %}
+{% for post in us %}
+    <div class="grid__item sm-w-1/1 md-w-1/2 lg-w-1/3 mrgt post-list post--center w-1/1" id="Apropos">
         <div class="post">
             <h1 class="post__title">{{ post.title }}</h1>
             {{ post.content }}
         </div>
-    {% endfor %}
-</div>
+    </div>
+{% endfor %}
 </div>
 
 <div class="grid grid--center">
-<div class="grid__item sm-w-1/1 md-w-1/2 lg-w-1/3 mrgt post-list post--center w-1/1" id="Contact">
-    {% for post in contact %}
+{% for post in contact %}
+    <div class="grid__item sm-w-1/1 md-w-1/2 lg-w-1/3 mrgt post-list post--center w-1/1" id="Contact">
         <div class="post">
             <h1 class="post__title">{{ post.title }}</h1>
             {{ post.content }}
         </div>
-    {% endfor %}
-</div>
+    </div>
+{% endfor %}
 </div>
