@@ -36,8 +36,9 @@
         }
     </script>
 
+
 <nav class="nav container__nav"></div>
-        <input class="nav__toggle" type="checkbox">
+    <input class="nav__toggle" type="checkbox">
         <div class="nav__hamburger">
             <span></span>
             <span></span>
@@ -45,11 +46,12 @@
         </div>
 
         <ul class="nav__list">
-            <li><a href="#us" class="nav__item">A propos de nous</a></li>
+            <li><a href="{{ '/' | absolute_url }}" class="nav__item">ACCUEIL 。家居</a></li>
+            <li><a href="#us" class="nav__item">À PROPOS 。關於</a></li>
         </ul>
-    </nav>
+</nav>
 
-    <div class="container__footer">
+<div class="container__content">
         <div class="grid grid--center">
             <div class="sm-w-1/1 md-w-1/2 lg-w-1/3 grid__item mrgt mrgb">
                 <a href="{{ '/' | absolute_url }}"><img src="{{ '/files/logo-h.png' | absolute_url }}" class="align-center img-responsive"></a>
@@ -58,28 +60,23 @@
             <div class="grid__item pdg mrgl box box--tight box--default sm-w-1/1">
             {{ content }}
             </div>
-    </div>
-    </div>
+</div>
 
-    <div class="grid grid--center">
-        <div class="grid__item sm-w-1/1 md-w-1/1 lg-w-1/1 mrgt mrgb+">
-            <footer>
-                <address>
-                    {{ site.title }} | 
-                    {{ site.street }} | 
-                    {{ site.zip }} {{ site.city }} | 
-                    {{ site.country }} | 
-                    <a href="mailto:{{ site.email }}">{{ site.email }}</a>
-                </address>
-            </footer>
-        </div>
-    </div>
+    <footer class="container__footer">
+        <address>
+            {{ site.title }} |
+            {{ site.street }} |
+            {{ site.zip }} {{ site.city }} |
+            {{ site.state }} - {{ site.country }} |
+            <a href="mailto:{{ site.email }}">{{ site.email }}</a><br><br>
+            designed by <b><a href="http://www.lelours.ch" target="blank">Lelours</a></b>
+        </address>
+    </footer>
 
     <script type="text/javascript" src="{{ '/javascripts/main.js' | absolute_url }}?{{site.time | date: '%s%N'}}"></script>
     <script type="text/javascript">
         window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
         ga('create', '{{ site.ga }}', 'auto');ga('send', 'pageview');
     </script>
-    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
 </body>
 </html>
