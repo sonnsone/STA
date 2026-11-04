@@ -80,15 +80,15 @@ $screen-md-max:                     1024px / 16px * 1em;
 $screen-lg-min:                     1025px / 16px * 1em;
 
 $breakpoints-default:               (
-'sm' '(min-width: #{$screen-sm-min})',
-'md' '(min-width: #{$screen-md-min})',
-'lg' '(min-width: #{$screen-lg-min})'
-);
+                                      'sm' '(min-width: #{$screen-sm-min})',
+                                      'md' '(min-width: #{$screen-md-min})',
+                                      'lg' '(min-width: #{$screen-lg-min})'
+                                    );
 $breakpoints-desc:                  (
-'xs' '(max-width: #{$screen-xs-max})',
-'sm' '(max-width: #{$screen-sm-max})',
-'md' '(max-width: #{$screen-md-max})'
-);
+                                      'xs' '(max-width: #{$screen-xs-max})',
+                                      'sm' '(max-width: #{$screen-sm-max})',
+                                      'md' '(max-width: #{$screen-md-max})'
+                                    );
 
 
 /**
@@ -211,11 +211,11 @@ $media-collapse:                    $screen-sm-max;
 
 
 /**
-* Container
-*/
+ * Container
+ */
 
-$container-gutter-width:            $spacing-unit-small;
-$container-max-width:               1400px;
+$container-gutter-width:            $spacing-unit-default;
+$container-max-width:               960px;
 
 
 /**
