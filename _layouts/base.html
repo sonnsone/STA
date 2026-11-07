@@ -40,24 +40,28 @@
     <h1>Swiss Tea Association</h1>
 </header>
 
-<nav class="nav container__nav"></div>
-    <input class="nav__toggle" type="checkbox">
-        <div class="nav__hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
+{% assign lang = page.lang | default: site.languages.first %}
+{% assign t = site.data.i18n[lang] %}
 
-        <ul class="nav__list">
-            <li><a href="{{ '/' | absolute_url }}" class="nav__item">ACCUEIL 。家居</a></li>
-            <li><a href="#us" class="nav__item">À PROPOS 。關於</a></li>
-        </ul>
+<nav class="nav container__nav">
+    <input class="nav__toggle" type="checkbox">
+    <div class="nav__hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <ul class="nav__list">
+        <li>{% include lang-switcher.html %}</li>
+        <li><a href="{{ '/' | append: lang | append: '/' | relative_url }}" class="nav__item">{{ t.accueil }}</a></li>
+        <li><a href="{{ '/' | append: lang | append: '/apropos/' | relative_url }}" class="nav__item">{{ t.apropos }}</a></li>
+    </ul>
 </nav>
 
 <div class="container__content">
         <div class="grid grid--center">
             <div class="sm-w-1/1 md-w-1/2 lg-w-1/3 grid__item mrgt mrgb">
-                <a href="{{ '/' | absolute_url }}"><img src="{{ '/files/swisstea-association.png' | absolute_url }}" class="align-center img-responsive"></a>
+                <a href="{{ '/' | append: lang | append: '/' | relative_url }}"><img src="{{ '/files/swisstea-association.png' | absolute_url }}" class="align-center img-responsive"></a>
             </div>
 
             <div class="grid__item pdg mrgl box box--tight box--default sm-w-1/1">

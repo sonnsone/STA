@@ -2,8 +2,9 @@
 layout: base
 ---
 
-{% assign us = site.us | sort: 'name' %}
-{% assign contact = site.contact | sort: 'name' %}
+{% capture seg %}/{{ page.lang }}/{% endcapture %}
+{% assign us = site.us | where_exp: "d", "d.relative_path contains seg" | sort: 'name' %}
+{% assign contact = site.contact | where_exp: "d", "d.relative_path contains seg" | sort: 'name' %}
 
 
 <div class="grid grid--center">

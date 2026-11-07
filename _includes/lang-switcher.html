@@ -1,0 +1,11 @@
+{% capture from %}/{{ page.lang }}/{% endcapture %}
+<nav class="lang-switcher">
+  {% for lang in site.languages %}
+    {% if lang == page.lang %}
+      <strong>{{ lang | upcase }}</strong>
+    {% else %}
+      {% capture to %}/{{ lang }}/{% endcapture %}
+      <a href="{{ page.url | replace_first: from, to | relative_url }}">{{ lang | upcase }}</a>
+    {% endif %}
+  {% endfor %}
+</nav>

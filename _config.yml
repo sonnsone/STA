@@ -76,6 +76,18 @@ collections:
     contact:
         output: true
 
+languages: ["fr", "en", "de", "zn"]
+
+defaults:
+  - scope: { path: "fr" }
+    values: { lang: fr }
+  - scope: { path: "en" }
+    values: { lang: en }
+  - scope: { path: "de" }
+    values: { lang: de }
+  - scope: { path: "zn" }
+    values: { lang: zn }
+
 # Sitemap
 
 sitemap:
