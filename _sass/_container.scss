@@ -12,10 +12,10 @@
         }
 
         .container__header {
-            margin-left: - (120 + $container-gutter-width);
+            margin-left: - 296px;
             background: url('../files/cygle.png') no-repeat;
-            height: 554px;
-            width: 120px;
+            height: 360px;
+            width: 332px;
 
             h1 {
                 display: none;
@@ -44,7 +44,7 @@
 @media only screen and (max-width: $screen-sm-max) {
     .container__header {
         background: url('../files/logo-h.png') center bottom no-repeat;
-        height: 150px;
+        height: 380px;
         width: 100%;
         margin-top: 10px;
 
